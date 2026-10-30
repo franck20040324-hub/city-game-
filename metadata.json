@@ -1,0 +1,6 @@
+{
+  "name": "MetroGenesis 3D - City Builder",
+  "description": "Expansive 3D low-poly city builder simulation with animated transport, seasons, terraforming, landmarks, economy, and local music player.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
