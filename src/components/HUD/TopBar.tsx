@@ -2,6 +2,7 @@ import React from 'react';
 import { CityStats, GameSettings, Season } from '../../types/game';
 import { TRANSLATIONS } from '../../constants/gameData';
 import { Coins, Sparkles, Users, Archive, Sun, Moon, CheckCircle2 } from 'lucide-react';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface TopBarProps {
   stats: CityStats;
@@ -102,8 +103,9 @@ export const TopBar: React.FC<TopBarProps> = ({
           </div>
         </div>
 
-        {/* Tax Collector Button */}
-        <div>
+        {/* Action Buttons: PWA Install & Tax Collector */}
+        <div className="flex items-center gap-2">
+          <PWAInstallButton />
           <button
             onClick={onCollectTaxes}
             disabled={taxAvailable <= 0}

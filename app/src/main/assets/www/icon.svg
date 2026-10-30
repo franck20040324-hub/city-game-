@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+    <linearGradient id="towerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded squircle with safe zone padding -->
+  <rect width="512" height="512" rx="108" fill="url(#skyGrad)" />
+
+  <!-- Stars / Sun Glow -->
+  <circle cx="410" cy="110" r="45" fill="url(#goldGrad)" opacity="0.9" />
+
+  <!-- City Skyline Silhouette -->
+  <!-- Left Building -->
+  <rect x="70" y="240" width="70" height="210" rx="8" fill="#1e293b" />
+  <rect x="85" y="260" width="16" height="20" rx="3" fill="#fde047" opacity="0.85" />
+  <rect x="110" y="260" width="16" height="20" rx="3" fill="#fde047" opacity="0.85" />
+  <rect x="85" y="300" width="16" height="20" rx="3" fill="#fde047" opacity="0.85" />
+  <rect x="110" y="300" width="16" height="20" rx="3" fill="#38bdf8" opacity="0.85" />
+  <rect x="85" y="340" width="16" height="20" rx="3" fill="#fde047" opacity="0.85" />
+  <rect x="110" y="340" width="16" height="20" rx="3" fill="#fde047" opacity="0.85" />
+
+  <!-- Center Hero Skyscraper -->
+  <rect x="180" y="130" width="110" height="320" rx="12" fill="url(#towerGrad)" />
+  <!-- Spire -->
+  <polygon points="235,50 230,130 240,130" fill="url(#goldGrad)" />
+  <!-- Window Grid -->
+  <g fill="#ffffff" opacity="0.9">
+    <rect x="195" y="160" width="20" height="24" rx="4" />
+    <rect x="225" y="160" width="20" height="24" rx="4" />
+    <rect x="255" y="160" width="20" height="24" rx="4" />
+    <rect x="195" y="200" width="20" height="24" rx="4" />
+    <rect x="225" y="200" width="20" height="24" rx="4" />
+    <rect x="255" y="200" width="20" height="24" rx="4" />
+    <rect x="195" y="240" width="20" height="24" rx="4" />
+    <rect x="225" y="240" width="20" height="24" rx="4" />
+    <rect x="255" y="240" width="20" height="24" rx="4" />
+    <rect x="195" y="280" width="20" height="24" rx="4" />
+    <rect x="225" y="280" width="20" height="24" rx="4" />
+    <rect x="255" y="280" width="20" height="24" rx="4" />
+  </g>
+
+  <!-- Right Building -->
+  <rect x="330" y="200" width="85" height="250" rx="8" fill="#334155" />
+  <rect x="345" y="225" width="20" height="20" rx="3" fill="#fde047" opacity="0.85" />
+  <rect x="380" y="225" width="20" height="20" rx="3" fill="#fde047" opacity="0.85" />
+  <rect x="345" y="265" width="20" height="20" rx="3" fill="#38bdf8" opacity="0.85" />
+  <rect x="380" y="265" width="20" height="20" rx="3" fill="#fde047" opacity="0.85" />
+
+  <!-- Road & Highway in foreground -->
+  <path d="M 0,440 L 512,440 L 512,512 L 0,512 Z" fill="#0f172a" />
+  <line x1="0" y1="475" x2="512" y2="475" stroke="#fde047" stroke-width="6" stroke-dasharray="24 16" />
+
+  <!-- Animated vehicle glow on road -->
+  <rect x="210" y="466" width="36" height="18" rx="4" fill="#ef4444" />
+  <circle cx="244" cy="475" r="3" fill="#fef08a" />
+</svg>
